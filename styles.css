@@ -1,0 +1,425 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navwrap1{
+    width: 100%;
+    height: 25vh;
+    background-color: lightskyblue;
+    font-size: 62.5%;
+    place-items: center;
+}
+.music_cont{
+    width: 100%;
+    height: 170px;
+    background-color: white;
+    border-radius: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.music_cont #title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: black;
+    margin: 2px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 0.3rem 0 0.5rem black;
+    text-align: center;
+    margin: auto;
+
+}
+.music_cont #artist{
+    color: lightseagreen;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: auto;
+}
+
+.img_rot{
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+}
+.img_rot img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 3rem 0.5rem royalblue;
+    object-fit: cover;
+}
+
+.music_control{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+
+    
+    
+}
+.music_control .fas{
+    color: black;
+    font-size: 3rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem black);
+}
+.music_control .play{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 225%;
+
+}
+.music_control .fas:hover{
+    color: gray;
+}
+
+.ani{
+    animation: rotPlay 4s linear infinite;
+}
+
+@keyframes rotPlay{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+
+body{
+    margin: 0px;
+    font-family: "Open Sans",sans-serif;
+}
+
+body{
+    background-image: url(images\\muc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.maintitle{
+    color: blue;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    text-justify: auto;
+    transition: 2s ease-in-out;
+}
+.navwrap:hover .maintitle{
+    color: blueviolet;
+    border-color: black;
+    border-collapse: collapse;
+    border-radius: 50%;
+    text-transform: uppercase;
+    text-decoration: cadetblue ;
+    transform: scale(1.5);
+}
+.main{
+    width: 75%;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.navwrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.leftdiv{
+   display: flex;
+
+}
+
+.navwrap > leftdiv > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.rightdiv{
+    display: flex;
+ 
+ }
+ 
+ .navwrap > rightdiv > div{
+     margin-right: 20px;
+     font-size: 0.9em;
+ }
+
+ .mewrap{
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+
+.linkwrap{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: boder-bottom 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.linkwrap a{
+    color: #8a8a8a;
+    text-decoration: #8a8a8a;
+    animation: colour 0.5s;
+}
+
+.linkwrap:hover{
+    border-bottom: 1px solid black;
+}
+
+.linkwrap a:hover{
+    color: black;
+
+}
+
+.active_link{
+    border-bottom: 1px solid black;
+}
+
+.active_link a{
+    color: black !important;
+}
+
+
+
+
+
+
+.maincont_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+}
+.maincont_wrap{
+    position: relative;
+}
+
+.song_bac{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrap{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 75px;
+
+
+
+}
+
+.imglogo img{
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+.img-text-wrap .title{
+    transition: 1s;
+    font-weight: 800;
+    color: transparent;
+    font-style: italic;
+    box-sizing: border-box;
+
+}
+
+.img-text-wrap:hover .title{
+    font-style: italic;
+    font-weight: 800;
+    color: lightgreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(50%);
+}
+
+.contentwrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.about_imgwrap{
+    width: auto;
+    position: absolute;
+    transition: 1.5s ease-in-out;
+    overflow: hidden;
+    left: 35%;
+    overflow: hidden;
+
+
+}
+.about_imgwrap:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+
+.message{
+    padding-left: 30px;
+    
+}
+
+.message h1{
+    color: steelblue;
+}
+.message p{
+    padding-right: 150px;
+}
+.message h2{
+    color: steelblue;
+    padding-right: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.link{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    border-color: black;
+}
+
+.link .song_bac{
+    height: 8rem;
+    width: 8rem;
+    margin: auto;
+    border-radius: 30%;
+}
+.link .song_bac{
+    transition: 1.2s ;
+    overflow: hidden;
+
+}
+
+.link:hover .song_bac{
+    transform: rotate(10deg);
+}
+.link:hover .title{
+    color: blue;
+    font-weight: bolder;
+    font-size: 125%;
+    
+}
+
+.link .title{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1rem;
+    color: cornflowerblue;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    transition: 1.5 ease-in-out;
+}
+
+.download{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border: 5px solid blue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.download div{
+     width: 100%;
+     height: 100%;
+     font-size: 20px;
+     text-transform: uppercase;
+     line-height: 50px;
+}
+.download .top{
+     background-color: blue;
+     color: white;
+     
+}
+.download .bottom{
+     color: blue;
+     background-color: white;
+     
+}
+.download:hover .top{
+    margin-top: -50px;
+}
+.download .top{
+    transition: 0.5s ease-in-out;
+
+}
+
+.youtube{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border: 5px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.youtube div{
+     width: 100%;
+     height: 100%;
+     font-size: 20px;
+     line-height: 50px;
+}
+.youtube .top{
+     background-color: red;
+     color: white;
+     
+}
+.youtube .bottom{
+    font-size: 15px;
+    color: red;
+    background-color: white; 
+}
+.youtube .bottom .fab{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.youtube:hover .top{
+    margin-top: -50px;
+}
+.youtube .top{
+    transition: 0.5s ease-in-out;
+
+}
